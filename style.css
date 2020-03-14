@@ -1,4 +1,10 @@
+@charset "UTF-8";
+
 /* index */
 h1 {
     color: aqua;
+}
+
+p {
+    border-bottom: black;
 }

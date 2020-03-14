@@ -22,6 +22,10 @@ header {}
 
 .contents {}
 
+.contents img {
+    width: 200px;
+}
+
 .main-bottom {}
 
 footer {}

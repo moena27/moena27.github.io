@@ -1,62 +1,156 @@
 @charset "UTF-8";
 
-/* common settings */
-
-/* index */
-header {
-    height: 80px;
-    background-color:rgba(21, 21, 82, 0.685);
-}
-
-.logo {
-    padding-left: 15px;
-    font-size: 30pt;
-    font: bold;
-    color: white;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.links {
-    float: right;
-    padding-right: 15px;
-}
-
-.links ul li {
-    display: inline;
-    color: white;
-    vertical-align: middle;
-}
-
-.links li {
-    padding: 10px;
-    margin-left: 10px;
-    background-color: white;
+/* ---------------common settings-------------- */
+/* header */
+body {
+    background-color:rgb(0, 14, 24);
 }
 
 .container {
-    padding: 20px;
-    height: 500px;
-    background-color: rgba(8, 8, 59, 0.815);
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-.contents {
-    padding: 10px;
-    width: 25%;
+header {
+    height: 80px;
+}
+
+.logo {
+    width: 350px;
+    padding-top: 15px;
+    padding-left: 20px;
+    float: left;
+    font-size: 30pt;
+    font-family:'Courier New' ;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.links {
+    list-style-type: none;
+    float: right;
+    margin-right: 15px;
+}
+
+.links ul {
+    text-align: center;
+    font-size: 8pt;
+    letter-spacing: 2px;
+}
+
+.links ul li {
     display: inline-block;
+    vertical-align: middle;
 }
 
-.contents img {
-    width: 200px;
+.links a {
+    display: inline-block;
+    width: 60px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.main-bottom {
+.links a:hover {
+    opacity: 0.8;
+    color: #333;
+}
+
+/* middle */
+.main {
+    max-width: 95%;
+    height: 1000px;
+    margin: 50px auto;
     text-align: center;
 }
 
+.main p {
+    color: white;
+    text-align: left;
+}
+
+/* footer */
 footer {
     padding: 10px;
     color: white;
     text-align: center;
-    background-color: rgba(21, 21, 82, 0.685);
+    font-size: 8pt;
 }
+
+/* ---------------------index-------------------- */
+.contents {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.com_img img {
+    width: 100%;
+}
+
+.com_img {
+    transition: 0.3s;
+}
+
+.com_img:hover {
+    opacity: 0.7;
+    filter: brightness(110%);
+}
+
+.contents ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: white;
+    font-size: 10pt;
+}
+
+.contents ul li {
+    list-style-type: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contents ul li img {
+    width: 12px;
+    margin: 0 5px;
+}
+
+.tags {
+    color: white;
+    text-decoration: none;
+}
+
+.tags:hover {
+    text-decoration: underline;
+}
+
+.main-bottom {
+    color: white;
+}
+
+.main-bottom p{
+    text-align: center;
+}
+
+
+/* ---------------------about-------------------- */
+.about_img {
+    width: 50%;
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+
+
+/* --------------------request------------------- */
+

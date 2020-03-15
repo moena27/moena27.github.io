@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 /* ---------------common settings-------------- */
+/* all */
+p {
+    color: white;
+    text-align: left;
+}
+
 /* header */
 body {
     background-color:rgb(0, 14, 24);
@@ -62,17 +68,38 @@ header {
     color: #333;
 }
 
-/* middle */
+/* main */
 .main {
-    max-width: 95%;
+    max-width: 80%;
     height: 1000px;
     margin: 50px auto;
+    float: left;
     text-align: center;
 }
 
-.main p {
+.main-bottom {
     color: white;
-    text-align: left;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* sidebar */
+.sidebar {
+    width: 100px;
+    height: 1080px;
+    background-color: black;
+    float: right;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 40px;
+    margin-top: 20px;
+}
+
+.clear_element {
+    clear: both;
 }
 
 /* footer */
@@ -132,14 +159,6 @@ footer {
 
 .tags:hover {
     text-decoration: underline;
-}
-
-.main-bottom {
-    color: white;
-}
-
-.main-bottom p{
-    text-align: center;
 }
 
 

@@ -2,7 +2,9 @@
 <html lang="ja">
     <head>
         <meta charset=”UTF-8″>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <title>WorkSpaceJapan</title>
     </head>
     <body>
@@ -114,7 +116,7 @@
 <!-- sidebar -->
         <aside>
             <div class="nav_icon">
-                <a href="#"><img src="./images/icon_menu.svg"></a>
+                <a class="js_modal_open" href="#"><img src="./images/icon_menu.svg"></a>
             </div>
             <ul class="nav_page">
                 <li><a href="#">1</a></li>
@@ -122,12 +124,22 @@
                 <li><a href="#" class="nav_page_dots">&hellip;</a></li>
                 <li><a href="#">10</a></li>
             </ul>
+            <div class="modal js_modal">
+                <div class="js_modal_close">
+                    <div class="modal_contents">
+                        <a href="#">close</a>
+                    </div>
+                </div>
+            </div>
         </aside>
 <!-- sidebar end -->
+
+        
 
 <!-- footer -->
         <footer><small>&copy; 2020 moepig</small></footer>
 <!-- footer end -->
 
+        <script src="script.js"></script>
     </body>
 </html>

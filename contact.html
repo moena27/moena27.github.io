@@ -3,7 +3,7 @@
     <head>
         <meta charset=”UTF-8″>
         <link rel="stylesheet" href="style.css">
-        <title>WorkSpaceJapan</title>
+        <title>お問い合わせフォーム｜WorkSpaceJapan</title>
     </head>
     <body>
 
@@ -22,17 +22,25 @@
 
 <!-- main -->
         <main role="main">
-            <p>ここはコンタクトページです。お仕事のご相談等はこちらまで</p>
+            <div class="form">
+                <h2>お問い合せフォーム</h2>
+                <p>お仕事の依頼はこちら。<br>
+                    入力いただいた情報はお問い合わせの範囲でのみ利用します。</p>
+                <form action="#" method="post" class="">
+                    <p><label>お名前：<br>
+                        <input type="text" name="name" size="60" required="true" class="form_text">
+                    </label></p>
+                    <p><label>メールアドレス：<br>
+                        <input type="email" name="email" size="60" required="true" class="form_text">
+                    </label></p>
+                    <p><label>お問い合わせ内容：<br>
+                        <textarea name="form_value" cols="60" rows="8" required="true" class="form_textarea"></textarea>
+                    </label></p>
+                    <p><input type="submit" value="送信" class="form_button"></p>
+                </form>
+            </div>
         </main>
 <!-- main end -->
-
-<!-- sidebar -->
-        <aside>
-            <div class="nav_icon">
-                <a href="#"><img src="./images/icon_menu.svg"></a>
-            </div>
-        </aside>
-<!-- sidebar end -->
 
 <!-- footer -->
         <footer><small>&copy; 2020 moepig</small></footer>

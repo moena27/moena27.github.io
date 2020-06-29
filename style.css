@@ -6,8 +6,9 @@ body {
     background-color:rgb(0, 14, 24);
 }
 
-p {
+p,h1,h2 {
     color: white;
+    font-weight: normal;
 }
 
 
@@ -69,7 +70,7 @@ main {
     padding-right: 5rem;
 }
 
-/* sidebar_end */
+/* sidebar */
 aside {
     position: fixed;
     display: flex;
@@ -128,6 +129,7 @@ aside {
     background-color: white;
     color: black;
 }
+
 
 /* footer */
 footer {
@@ -210,6 +212,26 @@ small {
     text-decoration: underline;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    right: 0rem;
+    top: 0rem;
+}
+
+.modal_contents a {
+    position: absolute;
+    color: white;
+    border-bottom: white;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
 
 /* ---------------------about-------------------- */
 .about_img {
@@ -218,7 +240,65 @@ small {
     margin: 0 30px 0 0;
 }
 
+/* ---------------------contact-------------------- */
+.form {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.form_text {
+    height: 1.5rem;
+}
+
+.form_button {
+    border-radius: 0.2rem;
+    border: none;
+    display: inline-block;
+    width: 6rem;
+    padding: 0.8rem;
+    margin-right: 0.5rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
 
-/* --------------------request------------------- */
 
+/* --------------------responsible------------------- */
+
+@media screen and (max-width: 480px) {
+    /*header, #logo, header_nav, main, content, aside, nav_pageを変える*/
+
+    header {
+        padding: 0 8rem 0 1rem;
+    }
+
+    #logo {
+        font-size: 1.8rem;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    main {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    aside {
+        height: 6rem;
+        background-color:rgba(0, 14, 24, 0);
+    }
+
+    .nav_page {
+        display: none;
+    }
+
+    .content {
+        width: 90%;
+    }
+}
